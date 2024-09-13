@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    unsigned long long factorial = 1;  // To hold larger factorial values
+
+    // Getting user input
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    // Factorial calculation
+    for(int i = 1; i <= num; ++i) {
+        factorial *= i;  // Multiplying each number with the result
+    }
+
+    cout << "Factorial of " << num << " = " << factorial;
+
+    return 0;  // Signify successful program termination
+}
